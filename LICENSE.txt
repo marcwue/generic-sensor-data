@@ -1,0 +1,5 @@
+This project is licensed under the terms of the
+
+Eclipse Public License 1.0 (epl-1.0) the license of clojure
+and
+Eclipse Public License 2.0 (epl-2.0) the updated version.
