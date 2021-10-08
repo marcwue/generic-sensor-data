@@ -3,7 +3,8 @@
    :dependencies [[org.clojure/clojure "1.10.0"]
                   [metosin/compojure-api "2.0.0-alpha30"]
                   [org.clojure/core.async "1.3.618"]
-                  [com.novemberain/monger "3.1.0"]]
+                  [com.novemberain/monger "3.1.0"]
+                  [clj-commons/clj-yaml "0.7.107"]]
    :ring {:handler generic-sensor-data-collector.handler/app
           ; this is for clojure.core.async
           :async? true

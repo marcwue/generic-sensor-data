@@ -1,0 +1,14 @@
+port: 8080
+collector:
+  sensors:
+    temperature:
+      - temp
+    humidity:
+      - humidity
+    particle:
+      - particles03um
+      - particles05um
+      - particles10um
+      - particles25um
+      - particles50um
+      - particles100um

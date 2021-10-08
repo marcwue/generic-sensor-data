@@ -3,19 +3,21 @@
             [ring.util.http-response :refer [ok]]
             [clojure.spec.alpha :as s]
             [spec-tools.spec :as spec]
-            [generic-sensor-data-collector.api :refer :all]))
+            [generic-sensor-data-collector.api :refer :all]
+            [generic-sensor-data-collector.config :refer :all]))
 
 (s/def ::value number?)
-(s/def ::type #{"TEMP" "HUMIDITY"})
+(s/def ::type (get-allowed-sensors))
 (s/def ::origin string?)
 (s/def ::description string?)
 (s/def ::_id any?)
-(def generic-data-model (s/keys :req-un [::value ::type ::origin]
+(s/def ::date string?)
+(def generic-data-model (s/keys :req-un [::value ::type ::origin ::date]
                                 :opt-un [::description]))
 
 (def asdf (s/keys :req-un [::value ::type]))
 
-(s/def ::generic-data-response (s/keys :req-un [::value ::type ::origin ::_id]
+(s/def ::generic-data-response (s/keys :req-un [::value ::type ::origin ::date ::_id]
                                        :opt-un [::description]))
 
 (def routes
