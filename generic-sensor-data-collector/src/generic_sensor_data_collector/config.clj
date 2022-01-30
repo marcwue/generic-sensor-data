@@ -7,4 +7,4 @@
   (yaml/parse-string (slurp configfile)))
 
 (defn get-allowed-sensors []
-  (reduce (fn [result [k v]] (reduce conj result v)) #{} (:sensors (:collector config))))
+  (reduce (fn [result [k v]] (reduce conj result v)) #{} (:sensor-tables (:collector config))))

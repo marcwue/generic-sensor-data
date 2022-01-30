@@ -55,12 +55,14 @@ while True:
                 continue
 
         print()
+        # refers to the concentration "corrected" to the "standard atmosphere"
         print("Concentration Units (standard)")
         print("---------------------------------------")
         print(
                 "PM 1.0: %d\tPM2.5: %d\tPM10: %d"
                 % (aqdata["pm10 standard"], aqdata["pm25 standard"], aqdata["pm100 standard"])
         )
+        # how the air is there currently, whatever temperature and pressure there is
         print("Concentration Units (environmental)")
         print("---------------------------------------")
         print(

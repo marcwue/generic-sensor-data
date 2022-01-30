@@ -1,14 +1,18 @@
 port: 8080
 collector:
-  sensors:
+  sensor-tables:
     temperature:
-      - temp
+    - temp
     humidity:
-      - humidity
+    - humidity
     particle:
-      - particles03um
-      - particles05um
-      - particles10um
-      - particles25um
-      - particles50um
-      - particles100um
+    - particles03um
+    - particles05um
+    - particles10um
+    - particles25um
+    - particles50um
+    - particles100um
+  warning-levels:
+    humidity: 70
+  emergency-action:
+    humidity: "send-mail"

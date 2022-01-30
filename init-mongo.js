@@ -5,8 +5,8 @@ db.createUser({
     user: 'clojure-rw',
     pwd: 'asdf1234',
     roles: [{
-	role: 'readWrite',
-	db: 'sensor-data',
+	    role: 'readWrite',
+	    db: 'sensor-data',
     }],
 });
 

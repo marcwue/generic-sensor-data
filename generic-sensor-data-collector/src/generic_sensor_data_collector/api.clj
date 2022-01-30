@@ -1,6 +1,12 @@
 (ns generic-sensor-data-collector.api
   (:require [generic-sensor-data-collector.database :refer :all]))
 
-(defn post-generic-data [data]
+(defn add-sensor-data [data]
   (println data)
-  (insert-temperature "temperature" data))
+  ;(insert-temperature "temperature" data)
+  data)
+
+(defn add-sensor-data-list [data]
+  (println data)
+  ;(insert-temperature "temperature" data)
+  data)

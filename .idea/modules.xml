@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/generic-sensor-data.iml" filepath="$PROJECT_DIR$/.idea/generic-sensor-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generic-sensor-data-collector/generic-sensor-data-collector.iml" filepath="$PROJECT_DIR$/generic-sensor-data-collector/generic-sensor-data-collector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generic-sensor-data-fe/generic-sensor-data-fe.iml" filepath="$PROJECT_DIR$/generic-sensor-data-fe/generic-sensor-data-fe.iml" />
+    </modules>
+  </component>
+</project>
